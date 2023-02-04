@@ -1,0 +1,95 @@
+.topnav{
+    padding: 15px;
+    background-color:black;
+
+    
+}
+.active , .about , .contact{
+    text-align: left;
+    word-spacing: 20px;
+}
+    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif};
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+}
+
+header{
+    padding: 60px;
+    background-image:url("read.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: rgb(0,0,0) ;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    background-image:red;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    min-height: 100vh;
+}
+
+video {
+    padding: 10px;
+}
+
+iframe {
+    height: 75vh;
+}
+
+img {
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+h5,p{text-align:left;
+    line-height:10px;
+    
+}
+
+h6{
+    font-size: 20px;
+}
