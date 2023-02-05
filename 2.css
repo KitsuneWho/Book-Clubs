@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,300;1,500&display=swap');
+
+:root{
+  --orange:#ff7800;
+  --black:#130f40;
+  --purple:#8000FF;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+  --border:.2rem solid rgba(0,0,0,.1);
+  --outline:.1rem solid rgba(0,0,0,.1);
+  --outline-hover:.2rem solid var(--black);
+}
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+
+body{
+  background: url("read.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+
+section{
+  padding: 2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  border: 1rem var(--purple);
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+}
+
+.btn:hover{
+  background: var(--purple);
+  color:#fff;
+}
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+
+
+.header .logo{
+  color: var(--purple);
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+
+.header .navbar a:hover{
+  color: #8000FF;
+}
+
+
+.header .icons div{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: rgb(246, 236, 247);
+  color: #BB73E0;
+  font-size: 2rem;
+  margin-left: .3rem;
+  text-align: center;
+}
+
+
+.header .icons div:hover{
+  background: #8000FF;
+  color: #fff;
+}
+
+/* Set the style for the navigation menus */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8000FF;
+  background: #eee;
+  padding: 1rem;
+  transition: background 0.5s;
+  display: block;
+  outline: 0;
+}
+
+nav a:hover,
+nav li:focus-within > a {
+  background: #eee;
+  cursor: pointer;
+}
+
+/* Make the dropdown animate. */
+.dropdown-content {
+  min-width: max-content;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+/* The max-height should be set to something that will always be a little bit bigger than the height of the content. */
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  max-height: 200px;
+}
+
+/* This makes the top-level navigation horizontal on desktop, and vertical on smaller screens. */
+@media screen and (min-width: 768px) {
+  nav > ul > li {
+    float: left;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    width: max-content;
+  }
+
+  .content {
+    clear: both;
+  }
+}
+
+#home-btn{
+  display: none;
+}
+
+
+
+.header .search-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  max-width: 45rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: .5rem;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active{
+  right: 2rem;
+  width: 25%;
+  transition: .4s linear;
+}
+
+.header .search-form input{
+  height: 100%;
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 0 1.5rem;
+}
+
+
+
+.header .login-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: .5rem;
+  background: #fff;
+}
+
+.header .login-form.active{
+  right: 2rem;
+  transition: .4s linear;
+}
+.header .login-form h3{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header .login-form .box{
+  width: 100%;
+  background: #eee;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.header .login-form p{
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+.header .login-form p a{
+  text-decoration: underline;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25rem;
+  padding-bottom: 10rem;
+}
+
+.home .famous-authors{
+    position: absolute;
+    top: 30%; right: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fff;
+  }
+  
+  
+  .home .famous-authors .box{
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .home .famous-authors .box .content {
+    font-size: 2rem;
+    text-align: left;
+  }
+  
+  .home .famous-authors .box .content span{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .home .famous-authors .box h3:hover{
+    color: #8000FF;
+  }
+
+  
+
+
+
+  footer {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem;
+  }
+
+  section{
+    padding: 2rem;
+  }
+}
+
+@media (max-width:768px){
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -100%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+@media (max-width:450px){
+  html{
+    font-size: 55%;
+  }
+}
+
+
+
+.home .content{
+  text-align: center;
+  width: 60rem;
+}
+
+
+.home .content h3{
+  font-size: 3rem;
+  padding: .5rem 0;
+}
+
+.home .content h3 span{
+  color: #E60001;
+}
+
+.home .content p{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+
+
+.tools .features{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 9rem;
+  font-size: 3rem;
+}
+
+.tools .about{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 9rem;
+  font-size: 3rem;
+}
+
+.tools .team{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 9rem;
+  font-size: 3rem;
+}
+
+
+.tools .links{
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 9rem;
+  font-size: 3rem;
+}
+
+
+.tools .features h1 span{
+  color: #E60001;
+}
+
+.tools .about h2 span{
+  color: #E60001;
+}
+
+.tools .team h4 span{
+  color: #E60001;
+}
+
+.tools .features p{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.tools .about p{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.tools .team p{
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+
+.tools .links p{
+  font-size: 1.2rem;
+  line-height: 1.2;
+  word-spacing: 10px;
+  text-decoration: solid;
+}
+
+.tools .social h5 span{
+  color: #E60001;
+}
+.tools .social p{
+  text-align: center;
+  font-size: 30px;
+  word-spacing: 20px;
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Book Reading Website</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    
+<!-- header section starts -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-book"></i> PG Reads </a>
+
+    <nav class="navbar">
+        <!--<a href="#home">Home</a>
+        <a href="#utilities">Utilities</a>
+        <a href="#Explore">Explore</a>
+        <a href="#Login/SignUp">Login/Signup</a>-->
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown"><a href="#" aria-haspopup="true">Utilities</a>
+                <ul class="dropdown-content" aria-label="submenu">
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">My Books</a></li>
+                    <li><a href="#">Friends</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#" aria-haspopup="true">Explore</a>
+                <ul class="dropdown-content" aria-label="submenu">
+                    <li><a href="#">Popular Ones</a></li>
+                    <li><a href="#">New Comers</a></li>
+                    <li><a href="#">Recommended For You</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Login/Signup</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="home-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-heart" id="heart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search..">
+    </form>
+
+
+
+    <form action="" class="login-form">
+        <h3>Account</h3>
+        <input type="email" placeholder="Your Email" class="box">
+        <input type="password" placeholder="Your Password" class="box">
+        <p>Forgot Your Password? <a href="#">Click Here</a></p>
+        <p>Don't Have An Account? <a href="#">Create Now</a></p>
+        <a href="#" class="btn"></a>
+        <input type="submit" value="Login Now" class="btn">
+
+    </form>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3><span>Deciding </span>What To Read Next? </h3>
+        <p>Not Finding Anything?</p>
+        <p>Let Us Help You With Our User-Friendly</p>
+        <p>UI To Bring The Best Material To You!</p>
+    </div>
+    <div class="famous-authors">
+        <div class="box">
+            <img src="JK ROWLING.jpg" alt="">
+            <div class="content">
+                <p>J. K. Rowling</p>
+                <span>Liked : 58000+</span>
+                <span>|</span>
+                <span>Readers : 97000+</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Mark Twain.jpg" alt="">
+            <div class="content">
+                <p>Mark Twain</p>
+                <span class="liked">Liked : 67000+</span>
+                <span class="seperator">|</span>
+                <span class="readers">Readers : 124000+</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Jeff Abbott.jpg" alt="">
+            <div class="content">
+                <p>Jeff Abbott</p>
+                <span class="liked">Liked : 84000+</span>
+                <span class="seperator">|</span>
+                <span class="readers">Readers : 70000+</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Sarah MacLean.jpg" alt="">
+            <div class="content">
+                <p>Sarah MacLean</p>
+                <span>Liked : 57000+</span>
+                <span class="seperator">|</span>
+                <span class="readers">Readers : 69000+</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Stephen King.jpg" alt="">
+            <div class="content">
+                <p>Stephen King</p>
+                <span class="liked">Liked : 79000+</span>
+                <span class="seperator">|</span>
+                <span class="readers">Readers : 98000+</span>
+            </div>
+        </div>
+        <div class="box">
+            <img src="William Shakespeare.jpg" alt="">
+            <div class="content">
+                <p>William Shakespeare</p>
+                <span class="liked">Liked : 167000+</span>
+                <span class="seperator">|</span>
+                <span class="readers">Readers : 468000+</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- home section ends -->
+
+
+<!-- feature section starts -->
+
+<section class="tools" id="tools">
+    <div class="features">
+        <h1 class="heading"> <span>What Are </span> Your Friends Reading?</h1>
+        <p>Chances Are Your Friends Are Discussing</p>
+        <p>Their Favourite Books On PG Reads</p>
+    </div>
+    <div class="about">
+        <h2 class="heading"> Our <span>Features</span></h2>
+        <p>We Provide A User-Friendly UI.</p>
+        <p>You Can Meet People With Similar Interests As Yours.</p>
+        <p>You Will Find Important Features</p>
+        <p>Right Infrontof Your Eyes.</p>
+        <p>By Creating An Account, You Can See Your Progress -</p>
+        <p>How Many Books You've Explored?</p>
+        <p>How Many Books You've Read?</p>
+        <p>Which Ones Are Your Favs?</p>
+        <p>Which Genre Is Close To Your Heart?</p>
+        <p>And Many More Exciting Things.</p>
+    </div>
+    <div class="team">
+        <h4 class="heading">Foundation <span>Team</span></h4>
+        <p>LEONARDO</p>
+        <p>Team Lead - Gaurav Shukla</p>
+        <p>Co-Founders - Pradumya & Yatharth</p>
+    </div>
+    <div class="links">
+        <p>
+            <a href="#">Art</a> <a href="#">Ebook</a>
+            <a href="#">Biography</a> <a href="#">Fiction</a>
+            <a href="#">Business</a> <a href="#">Fantasy</a>
+        </p>
+        <p>
+            <a href="#">Children's</a>
+            <a href="#">Christian</a>
+            <a href="#">Cookbook</a>
+            <a href="#">Classics</a>
+            <a href="#">Comics</a>
+        </p>
+    </div>
+
+    <div class="social">
+        <h5 class="heading"><span> Follow </span>Us On</h5>
+        <p> <a href="https://www.linkedin.com/in/gaurav-shukla-000416264/"  target="_blank" class="fa fa-linkedin"></a>
+            <a href="http://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/g.auravshukla" target="_blank" class="fa fa-instagram"></a>
+        </p>
+    </div>
+
+
+</section>
+<!-- feature section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link -->
+    <script src="3.js"></script>
+<footer>
+    <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2023 | pgreads</a>
+</footer>
+
+</body>
+</html>
